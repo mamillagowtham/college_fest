@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SRKIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #FFFFC5;
+            font-family: Verdana, sans-serif;
+        }
+
+        table {
+            margin: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Clickable area positioned exactly where "Explore More" is on the image */
+        .explore-link {
+            position: absolute;
+            left: 45%; /* Adjust this to match the "Explore More" text's location */
+            top: 80%;  /* Adjust this to match the vertical location */
+            width: 150px; /* Adjust to match the size of the "Explore More" text */
+            height: 40px; /* Adjust to cover the height of the text */
+            cursor: pointer;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <center>
+            <img src="./images/logo-img.png" alt="Logo">
+            <div class="heading">Department of Information Technology (IT)</div>
+        </center>
+        <tr>
+            <td>
+                <div class="image-container">
+                    <img src="./images/mainpage.png" width="1000" height="500" alt="Event Poster">
+                    <!-- Invisible link positioned over the "Explore More" text on the image -->
+                    <a href="MainTwo.html" class="explore-link"></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
