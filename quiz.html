@@ -30,14 +30,25 @@
         }
 
         .heading {
-            font-size: 32px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            text-align: center;
-            background: linear-gradient(120deg, #1e90ff, #8a2be2, #ff69b4, #ffd700);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(120deg, #1e90ff, #8a2be2, #ff69b4, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Ensures the text does not overflow */
+    text-overflow: ellipsis; /* Adds ellipsis if the text overflows (optional) */
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 14px; /* Reduce font size on mobile to fit text */
+        padding: 0 10px; /* Add padding to prevent the text from touching screen edges */
+        width: 100%; /* Make sure it takes the full width */
+    }
+}
 
         section {
             width: 90%;
