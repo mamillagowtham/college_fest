@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>SRKIT</title>
     <style>
         /* Make the body take up the full height and width of the screen */
@@ -106,12 +106,12 @@
                 background-size: 100% 50%;
                 background-position: top center, bottom center; /* Reverse images for mobile */
             }
+            #eve{
+        display: none;
+    }
 
             /* Color changes for mobile view */
-            #eve {
-                color: orange; /* Green color for EVENTS heading */
-            }
-
+       
             /* Positioning buttons in the middle of respective images */
             .tech-events {
                 position: absolute;
@@ -129,7 +129,7 @@
 
             /* Adding 50px vertical gap between the buttons */
             .tech-events {
-                top: 40%; /* Move it slightly down */
+                top: 20%; /* Move it slightly down */
             }
 
             .non-tech-events {
